@@ -276,3 +276,186 @@ footer{
 
 
 }
+/* =====================================
+        MOBILE MENU
+===================================== */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    nav {
+        height: 70px;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 45px;
+        margin-left: 0;
+    }
+
+
+    /* Hamburger */
+
+    .menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+
+    /* Mobile Navigation */
+
+    .navbar {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: var(--third-color);
+
+        display: none;
+
+        padding: 25px 0;
+    }
+
+
+    /* JavaScript এই class যোগ করবে */
+
+    .navbar.active {
+        display: block;
+    }
+
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+
+    /* Search mobile-এ থাকবে না */
+
+    .search {
+        display: none;
+    }
+
+
+    /* =========================
+            HERO
+    ========================= */
+
+    .hero-section {
+        height: 500px;
+
+        margin-top: 70px;
+    }
+
+    .hero-content {
+        top: 150px;
+
+        left: 25px;
+        right: 25px;
+
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 19px;
+    }
+
+    .hero-content p br {
+        display: none;
+    }
+
+
+    /* =========================
+            STORY
+    ========================= */
+
+    .hero-section1 {
+        flex-direction: column;
+
+        height: auto;
+    }
+
+    .hero-img1 {
+        width: 100%;
+    }
+
+    .hero-img1 img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+
+        border: 10px solid var(--main-color);
+    }
+
+    .hero-content1 {
+        width: 100%;
+
+        padding: 35px 25px;
+
+        gap: 25px;
+    }
+
+    .hero-content1 p {
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+            FOOTER
+    ========================= */
+
+    footer {
+        flex-direction: column;
+
+        gap: 35px;
+
+        height: auto;
+
+        padding: 40px 25px;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        margin-top: 0;
+    }
+        .section2{
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+        }
+}
+
+
+    
+
